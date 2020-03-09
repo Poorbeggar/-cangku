@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/F3-17%20four.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/optimized.css" />
+    <!--[if gte IE 7]>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/ie.css" />
+    <![endif]-->
+    <script type="text/javascript" src="./js/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/init.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<!--<div class="top">-->
+    <!--<ul>-->
+        <!--<li>-->
+            <!--<a href="##">常州市海德曼包装设备</a>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href="china/contact.html">联系我们</a>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href="./index_english.html">-->
+                <!--<img src="images/english.gif">-->
+            <!--</a>-->
+        <!--</li>-->
+    <!--</ul>-->
+
+<!--</div>-->
+<!--留言框-->
+<div id="youxia" class="hides">
+    <!--留言标题-->
+    <div class="yx_head">
+        <span>请您留言</span>
+        <span style="font-weight: bold" id="close">一</span>
+    </div>
+    <div class="yx_content">
+        <!--留言内容-->
+        <textarea id="duohang">
+
+        </textarea>
+        <!--留言姓名-->
+        <div class="yx_inputs">
+            <span class="glyphicon glyphicon-user"></span>
+            <input type="text" placeholder="姓名">
+        </div>
+        <!--留言电话-->
+        <div class="yx_inputs">
+            <span class="glyphicon glyphicon-earphone"></span>
+            <input type="text" placeholder="电话（必填）">
+        </div>
+        <!--留言邮箱-->
+        <div class="yx_inputs">
+            <span class="glyphicon glyphicon-envelope"></span>
+            <input type="text" placeholder="邮箱">
+        </div>
+        <!--留言地址-->
+        <div class="yx_inputs">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <input type="text" placeholder="地址">
+        </div>
+        <button id="close2">发送</button>
+    </div>
+</div>
+<div class="return">
+    <span   id="online"><a>在线留言</a></span>
+    <span><a href="mailto:hitapack@126.com">发送邮件</a></span>
+</div>
+<script>
+    var close = document.getElementById('close');
+    document.getElementById('duohang').value='请在此输入留言内容，我们会尽快与您联系。（必填）'
+    document.getElementById('duohang').onfocus= function () {
+        this.value='';
+    }
+    var close2 = document.getElementById('close2');
+    var youxia = document.getElementById('youxia');
+    var online = document.getElementById('online');
+    online.onclick = function(){
+        youxia.className='shows';
+    }
+    close.onclick = function () {
+        console.log('aaaa');
+        youxia.className='hides';
+    }
+    close2.onclick = function () {
+        console.log('aaaa');
+        youxia.className='hides';
+    }
+</script>
+<!--logo存放和电话位置-->
+<div class="logotel">
+    <div>
+        <a href="./index.html" id="logo" onclick="window.location='/';"></a>
+    </div>
+
+    <div>
+        <span class="glyphicon glyphicon-earphone"></span>+0519-88767279
+    </div>
+    <div>
+        <a href="./index_english.html">
+            <img src="images/english.gif">
+        </a>
+    </div>
+</div>
+<!--nav导航栏-->
+<div class="navdiv">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">海德曼包装</a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="on">
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./china/about_jj.html" class="dropdown-toggle" data-toggle="dropdown">
+                            公司介绍 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="./china/about_jj.html">公司简介</a></li>
+                            <li class="divider"></li>
+                            <li><a href="./china/about_ln.html">公司理念</a></li>
+                            <li class="divider"></li>
+                            <li><a href="./china/about_ry.html">公司荣誉</a></li>
+                            <li class="divider"></li>
+                            <li><a href="./china/about_mb.html">公司目标</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./china/tech_gyzj.html" class="dropdown-toggle" data-toggle="dropdown">
+                            工艺过程 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./china/tech_gyzj.html">关于纸浆模塑制品</a></li>
+                            <li class="divider"></li>
+                            <li><a href="./china/tech_zjms.html">纸浆模塑制品的生产工艺</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./china/product_A.html" class="dropdown-toggle" data-toggle="dropdown">
+                            经营项目 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li role="presentation" class="dropdown-header">自动纸浆模塑生产线</li>
+                            <li class="divider"></li>
+                            <li><a href="./china/product_A.html">ZMG-A系列生产线</a></li>
+
+                            <li><a href="./china/product_B.html">ZMG-B系列生产线</a></li>
+
+                            <li><a href="./china/product_R.html">ZMG-ROTARY 系列生产线</a></li>
+                            <li role="presentation" class="dropdown-header">工业品包装生产设备</li>
+                            <li class="divider"></li>
+                            <li><a href="./china/product_gyp.html">工业品包装成型机</a></li>
+
+                            <li><a href="./china/product_ganzao.html">干燥机</a></li>
+
+                            <li><a href="./china/product_zhengxingji.html">热压整形机</a></li>
+
+                            <li><a href="./china/product_fuzhu.html">辅助系统设备</a></li>
+
+                            <li><a href="./china/product_huajiang.html">化浆系统设备</a></li>
+                            <li class="titlebt" ><a href="./china/product_moju.html" style="color: #69d300 !important;">纸浆模塑模具</a></li>
+                            <li class="divider"></li>
+                            <li class="titlebt" ><a href="./china/product_zhipin.html" style="color: #69d300 !important;">纸浆模塑制品</a></li>
+                            <li class="divider"></li>
+                            <li class="titlebt" ><a href="./china/product_kaifa.html" style="color: #69d300 !important;">纸浆模塑技术开发</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="./china/service.html">客户服务</a>
+                    </li>
+                    <li>
+                        <a href="./china/performance.html">公司业绩</a>
+                    </li>
+                    <li>
+                        <a href="./china/legal.html">法律声明</a>
+                    </li>
+                    <li>
+                        <a href="./china/contact.html">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+<main>
+    <div class="left">
+        <!--内容介绍-->
+        <div class="content">
+            <h4>海德曼包装</h4>
+            <div class="banner">
+                <div id="myCarousel" class="carousel slide" >
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner" >
+                        <div class="item active" >
+                            <img src="upload/1.png" alt="自动纸浆模塑蛋托生产线" class="img-responsive">
+                            <div class="carousel-caption">自动纸浆模塑蛋托生产线</div>
+                        </div>
+                        <div class="item" >
+                            <img src="upload/2.png" alt="自动纸浆模塑蛋托生产线e" class="img-responsive">
+                            <div class="carousel-caption">自动纸浆模塑蛋托生产线</div>
+                        </div>
+                        <div class="item" >
+                            <img src="upload/3.png" alt="自动纸浆模塑蛋托生产线" class="img-responsive">
+                            <div class="carousel-caption">自动纸浆模塑蛋托生产线</div>
+                        </div>
+                        <div class="item" >
+                            <img src="upload/4.png" alt="自动纸浆模塑蛋托生产线" class="img-responsive">
+                            <div class="carousel-caption">自动纸浆模塑蛋托生产线</div>
+                        </div>
+                        <div class="item" >
+                            <img src="upload/5.png" alt="自动纸浆模塑蛋托生产线" class="img-responsive">
+                            <div class="carousel-caption">自动纸浆模塑蛋托生产线</div>
+                        </div>
+                    </div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <p>
+                常州市海德曼包装设备有限公司早在1985年就开始从事纸浆模塑技术、设备、制品的研究和开发，并因此而闻名中国市场。公司拥有一支高素质的技术、生产和服务队伍，在对国际先进技术及设备消化和吸收的基础上，进一步技术创新，运用现代化的设计理念及先进的加工手段，精心设计制造出ZMG系列纸浆模塑生产线设备。该设备可根据市场的需求，通过变换模具，利用废纸生产不同的蛋托、蛋盒、果托 ; 玻璃器皿、仪器仪表、工具、电器 , 零部件等工业品内衬防震包装..
+                ZMG 系列生产线设备具有性能稳定，效率高，能耗低，操作容易，维护简便，产品适应范围广泛，功能齐全，操作人员少等优点，其中 ZMG 系列自动纸浆模塑成型机和模切机获得国家实用新型专利。
+                通过成功地制造、安装并投产于中国、俄罗斯、中东、东南亚、非洲,南美洲等国，计100多套纸浆模塑生产线,公司积累了丰富的设计和制造经验,牢牢地占据了国内该领域的领先地位,并逐步扩大国际市场份额,是中国最具规模和综合实力的纸浆模塑设备生产及技术开发的专业公司。   海德曼公司拥有严格的生产管理制度,齐全的管理制度,齐全的检测手段和完善的质保体系,并获得ISO 9001-2000 国际质量体系认证。我们将始终坚持“质量第一
+            </p>
+
+        </div>
+    </div>
+    <!--轮播图-->
+    <div class="right">
+        <div class="work-thumbs homepage-thumbs">
+            <ul>
+                <li> <a class="thumbnail-footer link" href="china/product_B.html"><span class="tmbs-arrow arrow" style="right: -60px;"></span><img alt="纸浆模塑制品" src="upload/01.jpg"></a> <a class=" link" href="china/product_B.html">自动纸浆模塑蛋托生产线</a>              </li>
+                <li> <a class="thumbnail-footer link" href="china/product_gyp.html"><span class="tmbs-arrow arrow" style="right: -60px;"></span><img alt="纸浆模塑制品" src="upload/02.jpg"></a> <a href="china/product_gyp.html" class=" link STYLE1">自动纸浆模塑工业品包装生产线</a>              </li>
+                <li> <a class="thumbnail-footer link" href="china/product_zhipin.html"><span class="tmbs-arrow arrow" style="right: -60px;"></span><img alt="纸浆模塑制品" src="upload/03.jpg"></a> <a class=" link" href="china/product_zhipin.html">蛋托蛋盒</a>              </li>
+                <li> <a class="thumbnail-footer link" href="china/product_zhengxingji.html"><span class="tmbs-arrow arrow" style="right: -60px;"></span><img alt="纸浆模塑制品" src="upload/04.jpg"></a> <a class=" link" href="china/product_zhengxingji.html">热压整型机</a>              </li>
+                <li><a class="thumbnail-footer link" href="china/product_moju.html"><span class="tmbs-arrow arrow" style="right: -60px;"></span><img alt="纸浆模塑制品" src="upload/05.jpg"></a><a class=" link" href="china/product_moju.html">纸浆模塑模具</a>              </li>
+                <li class="last"> <a class="thumbnail-footer link" href="china/product_zhipin.html"><span class="tmbs-arrow arrow" style="right: -60px;"></span><img alt="纸浆模塑制品" src="upload/06.jpg"></a> <a class=" link" href="china/product_zhipin.html">新型水果周转箱</a>              </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<aside>
+    <span>模塑生产技术</span> <span>海德曼是专业开发纸浆模塑设备，制品的生产技术公司，拥有自己独特的、成熟的工艺技术.</span>
+</aside>
+<footer>
+    <!--产品主营-->
+    <ul>
+        <li>
+            <a href="china/product_huajiang.html">自动纸浆模塑生产线</a>
+        </li>
+        <li>
+            <a href="china/product_gyp.html">工业品包装生产设备</a>
+        </li>
+        <li>
+            <a href="china/product_moju.html">纸浆模塑模具</a>
+        </li>
+        <li>
+            <a href="china/product_zhipin.html">纸浆模塑制品</a>
+        </li>
+    </ul>
+    <!--手机号-->
+    <p>
+
+        <span>移动手机 ：13861614855</span>
+        <span style=" margin-left: 100px">电话/传真 +86-519-88767279 +86-519-88760955</span>
+    </p>
+    <!--地址-->
+    <p>
+
+        <span>地 址 ： 江苏省常州市武进区横山桥芙蓉工业集中区</span>
+        <span style=" margin-left: 100px">邮箱：hitapack@126.com  jiangyintianyuan@126.com</span>
+    </p>
+    <!--备案号-->
+    <p>
+        津ICP备19002389号 京公网安备11000002000006号
+    </p>
+</footer>
+</body>
+<script>
+    var top = document.getElementById('top');
+    top.onclick = function(){
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
+    var a = 1;
+    var lunbo = document.getElementsByClassName('carousel')[0];
+    var s = document.getElementsByClassName('container-fluid')[0];
+    s.addEventListener('click',function (ec) {
+        var e = ec || event;
+        var target = e.target || e.srcElement;
+
+
+        if(target.classList.contains('navbar-toggle')){
+            console.log('aaa');
+            if(a===1){
+                lunbo.style.zIndex = -10;
+                console.log(a);
+                a=-1;
+                console.log(a);
+            }else {
+                lunbo.style.zIndex = 10;
+                console.log(a);
+                a=1;
+                console.log(a);
+            }
+        }
+        if(target.classList.contains('icon-bar')){
+            console.log('aaa');
+            if(a===1){
+                lunbo.style.zIndex = -10;
+                console.log(a);
+                a=-1;
+                console.log(a);
+            }else {
+                lunbo.style.zIndex = 10;
+                console.log(a);
+                a=1;
+                console.log(a);
+            }
+        }
+
+    })
+</script>
+</html>
